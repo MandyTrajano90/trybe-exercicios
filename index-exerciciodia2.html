@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <title>Frutas</title>
     <style>
-        h1 { color: orange; font-size: 65px; font-family: Helvetica;
+        h1 { color: orange; font-size: 65px; font-family: Helvetica; text-align:center; text-decoration: underline;
         }
         ul {
-            background-color: bisque;
             font-weight: bold;
             font-style: italic;
+            line height: 40px;
         }
 
         .back-color { 
@@ -19,16 +19,20 @@
         }
         p {
             font-size: 3em;
+            font-weight:600;
         }
+        #Vermelho {background-color: red; color: black;}
+        #Amarelo {background-color: yellow; color: black}
+        #Rosa {background-color: pink; color: black}
     </style>
   </head>
   <body>
     <h1>Frutas</h1>
     <p class="back-color">Qual é a sua fruta favorita?</p>
-    <ul class="back-color">
-      <li>Maçã</li>
-      <li>Banana</li>
-      <li>Goiaba</li>
+    <ul>
+      <li id="Vermelho">Maçã</li>
+      <li id="Amarelo">Banana</li>
+      <li id="Rosa">Goiaba</li>
     </ul>
   </body>
 </html>
