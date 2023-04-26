@@ -1,6 +1,6 @@
 .super-mario {
-  width: 200px;
-  top: 400px;
+  width: 100px;
+  top: 200px;
 }
 
 .goomba {
@@ -8,7 +8,7 @@
 }
 
 .baloon {
-
+  color: red
 }
 
 .speach {
