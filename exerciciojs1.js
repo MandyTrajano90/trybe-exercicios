@@ -8,6 +8,7 @@ console.log(a / b);
 console.log(a % b);
 */
 
+/*
 let anguloA = 80;
 let anguloB = 25;
 let anguloC = 75;
@@ -16,3 +17,5 @@ if (anguloA + anguloB + anguloC == 180) {
 } else {
     console.log('false');
 } 
+*/
+
