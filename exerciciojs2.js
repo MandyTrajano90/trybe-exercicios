@@ -94,10 +94,73 @@ do {
   resultado += i + ' ';
 } while (i < 5); */
 
+/*
 let n = 9;
 
 let resultado = 100;
 for (let index = 0; index <= n; index += 1) {
   resultado -= index;
 };
-console.log(resultado);
+console.log(resultado);*/
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let soma = 0;
+let media = 0;
+
+/*
+for(let index = 0; index < numbers.length; index += 1) {
+  soma += numbers[index];
+}
+console.log(soma); // Somatório do array */
+
+/*
+for(let index = 0; index < numbers.length; index += 1) {
+  media += numbers[index] / numbers.length;
+}
+console.log(media); 
+
+if(media > 20) {
+  console.log('O valor da média aritmética é maior que 20');
+} else {
+  console.log('O valor da média aritmética é menor ou igual a 20');
+}
+
+let numeroMaior = numbers[0];
+for(let index = 1; index < numbers.length; index += 1 ) {
+  if(numbers[index] > numeroMaior) {
+    numeroMaior = numbers[index];
+  }
+}
+console.log(numeroMaior);
+
+let numeroMenor = numbers[0];
+for(let index = 1; index < numbers.length; index += 1 ) {
+  if(numbers[index] < numeroMenor) {
+    numeroMenor = numbers[index];
+  }
+}
+console.log(numeroMenor);
+
+for(let index = 0; index < numbers.length; index += 1 ) {
+  if(numbers[index] % 2 !== 0) {
+    soma += 1;
+  }
+}
+console.log(soma);
+
+if(soma === 0) {
+  console.log('Nenhum valor ímpar encontrado');
+} else {
+  console.log(soma);
+}*/
+
+let array25 = [];
+
+for(let index1 = 1 ; index1 <= 25; index1 += 1) {
+  array25.push(index1);
+}
+console.log(array25);
+
+for(let index = 0; index < array25.length; index += 1) {
+  console.log(array25[index] / 2);
+}
