@@ -34,3 +34,62 @@ let car = {
 for(let value2 in car) {
   console.log(value2, car[value2]);
 }
+
+
+let customer1 = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+};
+
+console.log(customer1);
+customer1.lastName = 'Faria';
+console.log(customer1);
+
+//Função para adicionar novas propriedades ao objeto //
+
+let customer = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+};
+
+let newKey = 'lastName';
+let lastName = 'Ferreira';
+
+function addProperty(object, key, value) {
+  object[key] = value;
+};
+
+addProperty(customer, newKey, lastName);
+console.log(customer);
+
+let newKey2 = 'nacionalidade';
+let nacionalidade = 'Brasileiro';
+
+addProperty(customer, newKey2, nacionalidade);
+console.log(customer);
+
+// Exercicio Student //
+
+let student = {
+  primeiroNome: 'Amanda',
+  ultimoNome: 'Trajano',
+  idade: 33,
+  estado: 'Rio de Janeiro',
+  temNamorada: true,
+  }
+  
+  for(let index in student) {
+    console.log(student[index]);
+  }
+
+function adicionaPropriedade(objeto, chave, valor) {
+  objeto[chave] = valor;
+}
+
+let novaChave = 'cidade';
+let cidade = 'Niteroi';
+adicionaPropriedade(student, novaChave, cidade);
+console.log(student);
+console.log(student.primeiroNome + ' ' + student.ultimoNome + ' é estudante na Trybe, tem ' + student['idade'] + ' anos. Ela mora no estado do ' + student.estado + ', na cidade de ' + student.cidade + '.' + ' Ela tem namorada? ' + student.temNamorada + '.');
