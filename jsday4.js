@@ -123,3 +123,43 @@ listSkills(student1);
 
 console.log('Estudante 2');
 listSkills(student2);
+
+
+let costumer1 = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+}
+
+console.log(Object.keys(costumer1));
+console.log(Object.values(costumer1));
+
+
+// Objects values //
+let student = {
+  html: 'Muito Bom',
+  css: 'Bom',
+  javascript: 'Ótimo',
+  softskill: 'Ótimo',
+};
+
+function listSkillsValuesWithFor(student) {
+  let skills = [];
+  for(skill in student) {
+    skills.push(student[skill]);
+  }
+
+  return skills;
+};
+
+function listSkillsValuesWithValues(student) {
+  return Object.values(student);
+}
+
+// Sem Object.values
+console.log(listSkillsValuesWithFor(student));
+
+// Com Object.values
+console.log(listSkillsValuesWithValues(student));
+
+
