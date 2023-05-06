@@ -72,7 +72,7 @@ console.log(customer);
 
 // Exercicio Student //
 
-let student = {
+let estudante = {
   primeiroNome: 'Amanda',
   ultimoNome: 'Trajano',
   idade: 33,
@@ -80,8 +80,8 @@ let student = {
   temNamorada: true,
   }
   
-  for(let index in student) {
-    console.log(student[index]);
+  for(let index in estudante) {
+    console.log(estudante[index]);
   }
 
 function adicionaPropriedade(objeto, chave, valor) {
@@ -124,17 +124,6 @@ listSkills(student1);
 console.log('Estudante 2');
 listSkills(student2);
 
-
-let costumer1 = {
-  firstName: 'Roberto',
-  age: 22,
-  job: 'Teacher',
-}
-
-console.log(Object.keys(costumer1));
-console.log(Object.values(costumer1));
-
-
 // Objects values //
 let student = {
   html: 'Muito Bom',
@@ -162,4 +151,29 @@ console.log(listSkillsValuesWithFor(student));
 // Com Object.values
 console.log(listSkillsValuesWithValues(student));
 
+// Object entries //
 
+let costumer1 = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
+}
+
+console.log(Object.keys(costumer1));
+console.log(Object.values(costumer1));
+console.log(Object.entries(costumer1));
+
+let countries = {
+  franca: 'Paris',
+  brasil: 'Brasília',
+  espanha: 'Madrid',
+  portugal: 'Lisboa',
+};
+let pairKeyValue = Object.entries(countries);
+console.log(pairKeyValue);
+
+for(index in pairKeyValue) {
+  console.log('--------');
+  console.log('País:', pairKeyValue[index][0]);
+  console.log('Capital:', pairKeyValue[index][1]);
+};
