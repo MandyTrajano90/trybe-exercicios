@@ -8,7 +8,7 @@ const firstC = parent.firstElementChild;
 const primeiroFilho = whereAreYou.previousElementSibling;
 const textElement = whereAreYou.nextSibling;
 const thirdChild = whereAreYou.nextElementSibling;
-const thirdChild2 = parent.lastElementChild.previousElementSibling; */ 
+const thirdChild2 = parent.lastElementChild.previousElementSibling; 
 
 const pai = document.getElementById('parent');
 const irmao = document.createElement('section');
@@ -29,4 +29,5 @@ const terceiroFilho = filhoDoPrimeiroFilho
 .parentElement
 .parentElement
 .nextElementSibling;
-console.log(terceiroFilho);
+console.log(terceiroFilho); 
+*/
