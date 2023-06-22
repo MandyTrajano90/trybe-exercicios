@@ -6,6 +6,21 @@
   <title>Validador de Campos</title>
 </head>
 <body>
-  
+  <div class="conteiner">
+    <h1>Validador de Campos</h1>
+    <form>
+      <input type="text" placeholder="Insira aqui o valor" id="value">
+      <select name="campo" id="option">
+        <option value="cpf">CPF</option>
+        <option value="hexColor">Cor Hexadecimal</option>
+        <option value="email">E-mail</option>
+        <option value="uuid">UUID v4</option>
+        <option value="url">URL</option>
+      </select>
+      <button id="button">Validar</button>
+    </form>
+    <p id="answer">Digite o valor, escolha a opção e clique em validar</p>
+  </div>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
